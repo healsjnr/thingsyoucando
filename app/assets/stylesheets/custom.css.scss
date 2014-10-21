@@ -1,6 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
+$primaryOrange: #FF7A42;
+$complimentaryGreen: #2EB17C;
+$complimentaryGreenBackground: #257D5A;
+$secondaryBlue: #3474A9;
+$secondaryOrange: #FFAF42;
+
+$headTextColor: #FEFEFE;
 
 /* application wide */
 
@@ -50,6 +58,10 @@ h2 {
   color: #999;
 }
 
+div{
+  box-sizing:border-box;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -58,13 +70,45 @@ p {
 /* splash */
 
 .splash {
+
+  display: inline;
+  float: left;
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: 60px;
   h1 {
-    font-size: 12em;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    font-size: 6em;
     font-weight: bold;
-    color: #999;
+    color: $headTextColor;
   }
+  &.to-do-list {
+    float: right;
+    width: 60%;
+    text-align: center;
+    ul {
+      font-size: 3em;
+      color: $headTextColor;
+      list-style-type: none;
+      text-shadow: 1px 1px 1px $secondaryBlue, 3px 3px 5px blue
+    }
+    li {
+      padding-left: 2em;
+      &:before {
+        content: '\f046' /*fontawesome char code inside the ''*/;
+        font-family: FontAwesome; /* or whatever */
+        display: inline-block;
+        margin-left: -2em; /*same as padding-left set on li*/
+        width: 2em; /*same as padding-left set on li*/
+      }
+    }
+  }
+}
+
+
+
+
+.above-the-fold {
+  background-color: $complimentaryGreenBackground;
 }
 /* header */
 

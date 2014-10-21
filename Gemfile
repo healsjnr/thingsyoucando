@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'unicorn'
 gem 'haml'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'spring'
