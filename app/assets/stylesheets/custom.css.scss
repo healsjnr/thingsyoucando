@@ -3,8 +3,10 @@
 @import "font-awesome";
 
 $primaryOrange: #FF7A42;
+$primaryOrangeDark: #B85E37;
 $complimentaryGreen: #2EB17C;
 $complimentaryGreenBackground: #257D5A;
+$secondaryBlueDark: #055EA7;
 $secondaryBlue: #3474A9;
 $secondaryOrange: #FFAF42;
 
@@ -18,6 +20,8 @@ html {
 
 body {
   padding-top: 60px;
+  font-family: 'Roboto', sans-serif;
+  color: #c7c7c7;
 }
 
 section {
@@ -38,8 +42,8 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.36;
 }
 
 h1 {
@@ -50,12 +54,16 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
 div{
@@ -71,9 +79,6 @@ p {
 
 .splash {
 
-  display: inline;
-  float: left;
-  width: 40%;
   margin-top: 60px;
   margin-bottom: 60px;
   h1 {
@@ -81,15 +86,16 @@ p {
     font-weight: bold;
     color: $headTextColor;
   }
+  h2 {
+    color: $headTextColor;
+  }
   &.to-do-list {
-    float: right;
-    width: 60%;
-    text-align: center;
+    text-align: left;
     ul {
       font-size: 3em;
       color: $headTextColor;
       list-style-type: none;
-      text-shadow: 1px 1px 1px $secondaryBlue, 3px 3px 5px blue
+      text-shadow: 1px 1px 1px black, 3px 3px 5px $secondaryBlue
     }
     li {
       padding-left: 2em;
@@ -104,12 +110,24 @@ p {
   }
 }
 
+.details {
+  color: $headTextColor;
+  height: 100%;
+  background-color: $secondaryBlueDark;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
-
+.points {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 80px;
+}
 
 .above-the-fold {
   background-color: $complimentaryGreenBackground;
 }
+
 /* header */
 
 #logo {
