@@ -19,10 +19,10 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 5vh;
   font-family: 'Roboto', sans-serif;
-  color: #c7c7c7;
-  font-size: 2vmax;
+  color: #E1E1E1;
+  font-size: 2.5vh;
 }
 
 section {
@@ -55,7 +55,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.5vmax;
+  font-size: 3.5vmax;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -81,28 +81,20 @@ div{
     font-weight: bold;
     color: $headTextColor;
   }
-  h2 {
-    font-size: 6vh;
-    color: $headTextColor;
-  }
+
   &.to-do-list {
-    text-align: left;
-    ul {
-      font-size: 4vmax;
+    h2 {
+      font-size: 6vh;
       color: $headTextColor;
-      list-style-type: none;
-      text-shadow: 1px 1px 1px black, 3px 3px 5px $secondaryBlue
+      text-shadow: 1px 1px 1px black, 3px 3px 5px $secondaryBlue;
+      text-align: left;
     }
-    li {
-      padding-left: 2em;
-      &:before {
-        content: '\f046' /*fontawesome char code inside the ''*/;
-        font-family: FontAwesome; /* or whatever */
-        display: inline-block;
-        margin-left: -2em; /*same as padding-left set on li*/
-        width: 2em; /*same as padding-left set on li*/
-      }
+    p {
+      margin-bottom: 10px;
     }
+    padding-left: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 
@@ -111,7 +103,7 @@ div{
   height: 100%;
   background-color: $secondaryBlueDark;
   padding-left: 6vmax;
-  padding-right: 3vmax;
+  padding-right: 6vmax;
   h2 {
     font-size: 4vh;
     color: $headTextColor;
